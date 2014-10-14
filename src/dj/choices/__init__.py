@@ -31,8 +31,6 @@ from __future__ import unicode_literals
 from functools import partial
 from textwrap import dedent
 
-from django.utils.encoding import StrAndUnicode
-
 import six
 
 unset = object()
@@ -40,7 +38,7 @@ ugettext = unset
 no_id_given = -255
 
 
-class ChoicesEntry(StrAndUnicode, int):
+class ChoicesEntry(int):
     global_id = 0
 
     def __new__(cls, *args, **kwargs):
