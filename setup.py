@@ -41,7 +41,7 @@ with codecs.open(
 
 setup (
     name = 'dj.choices',
-    version = '0.9.2',
+    version = '0.9.2.md',
     author = 'Łukasz Langa',
     author_email = 'lukasz@langa.pl',
     description = "An enum implementation for Django forms and models.",
