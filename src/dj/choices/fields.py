@@ -34,7 +34,7 @@ from django.db import models
 from django.db.models.fields import IntegerField
 from django.utils.text import capfirst
 from django.utils.translation import ugettext_lazy as _
-from dj.choices import unset, Choices, Gender
+from dj.choices import unset, Choices, Country
 
 import six
 
@@ -45,7 +45,7 @@ class ChoiceField(IntegerField):
 
     def __init__(self, *args, **kwargs):
         if type(kwargs.get('choices')) == list:
-            kwargs['choices'] = Gender
+            kwargs['choices'] = Country
         if 'choices' not in kwargs:
             raise exceptions.ImproperlyConfigured("No choices class specified.")
         else:
